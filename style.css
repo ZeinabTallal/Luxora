@@ -1,0 +1,357 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+
+}
+a{
+    text-decoration: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #fbf5f0;
+    font-family: "Playfair Display", serif;
+
+}
+h1,h2{
+    font-family: "Playfair Display", serif;
+
+}
+h3 ,h4{
+    font-family: "Poppins", sans-serif;
+}
+.container{
+    max-width: 85%;
+    margin: auto;
+    
+}
+#home{
+    background: url('./img/home\ background.jpg') center center/cover no-repeat;
+    height: 100vh;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar .logo{
+    padding: 15px 0;
+}
+.navbar .logo img{
+    width: 100px;
+}
+.navbar .nav ul{
+    display: flex;
+    
+}
+.navbar .nav ul li a{
+    padding: 15px 35px;
+    color: #211c1a;
+}
+.navbar .nav ul li a:hover{
+    color: #b8756d;
+}
+.btn{
+    margin-right: 20px;
+    background-color: #5b463e;
+    font-family: "Poppins", sans-serif;
+    color: #fff;
+    border: none;
+    padding: 15px 35px;
+    border-radius: 18px;
+    -webkit-border-radius: 18px;
+    -moz-border-radius: 18px;
+    -ms-border-radius: 18px;
+    -o-border-radius: 18px;
+}
+.btn:hover{
+    background-color:#b8756d ;
+}
+.left .text{
+    margin: 10% 0;
+}
+
+.left .text h1{
+    padding: 25px 0;
+    font-size: 50px;
+    color: #211c1a;
+}
+.icon{
+    display: flex;
+    gap: 3px;
+    color: #b8756d;
+    font-size: 35px;
+    font-family: "Dancing Script", cursive;
+
+}
+.icon i{
+    color: #b8756d;
+    font-size: 20px;
+}
+.left .text h1 span{
+    font-size: 80px;
+    color:#b8756d ;
+    font-family: "Dancing Script", cursive;
+
+}
+.left .text p{
+    font-size: 20px;
+    width: 40%;
+    padding: 15px 0;
+    color:#211c1a ;
+    margin-bottom: 15px;
+}
+.left .text .border{
+    width: 60px;
+    background-color: #c98a7d;
+    height: 2px;
+    margin: 20px 0;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+}
+#about .border{
+    width: 60px;
+    background-color: #d4909b;
+    height: 2px;
+    margin: 20px 0;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+
+}
+
+#about .content{
+    background-image: url(./img/about\ us.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius:30px;
+    padding: 10% 100px;
+    -webkit-border-radius:30px;
+    -moz-border-radius:30px;
+    -ms-border-radius:30px;
+    -o-border-radius:30px;
+}
+#perfume h2 ,
+#accessories h2,
+#gallary h2,
+#shop .list h2
+{
+    text-align: center;
+    font-size: 25px;
+    padding: 15px 0;
+    margin: 0 auto;
+    border-bottom: 2px solid #b8756d;
+    width: fit-content;
+}
+
+#about .content h2{
+    padding:25px 0;
+    font-size: 50px;
+    color: #211c1a;
+
+}
+#about .content p{
+    width: 50%;
+    padding-bottom: 20px;
+    color: #5b463e;
+}
+#shop{
+    margin: 35px 0;
+}
+#shop .all_products{
+    background-image: url(./img/shop\ packgroung.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 25px;
+    margin: 30px 0;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    padding: 15px 0 50px;
+}
+#shop .list ul{
+    display: flex;
+    padding: 30px 50px;
+    align-items: center;
+    gap: 25px;
+    margin: 0 30px;
+}
+#shop .list ul li a{
+    color: #211c1a;
+    font-size: 18px;
+    
+}
+#shop .list ul li a:hover{
+    color: #b8756d;
+}
+#shop img{
+    width: 180px;
+    height: 200px;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+#shop .icon,
+#perfume .detail,
+#accessories .detail{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5px ;
+}
+#shop .icon h4,
+#perfume .item h4,
+#accessories .item h4
+{
+    color: #211c1a;
+    font-size: 20px;
+}
+#perfume .item .detail span,
+#accessories.item span
+{
+    color: #211c1a;
+    font-size: 18px;
+
+}
+#shop .icon i,
+#perfume .item i,
+#accessories .item i
+{
+    color: #b8756d;
+    font-size: 18px;
+}
+#shop .perfume ,
+#shop .access
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 25px 0;
+}
+#shop #perfume img ,
+#shop #accessories img
+
+{
+    width: 150px;
+    height: 170px;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+#shop #perfume .item ,
+#shop #accessories .item 
+{
+    padding: 10px;
+}
+#shop .total{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 35px;
+}
+#shop .total_elements{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#gallary{
+    margin: 30px 0;
+    margin-left:80px;
+}
+#gallary img{
+    width: 28%;
+    height: 300px;
+    flex-wrap: wrap;
+    margin: 25px;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    
+}
+
+#contact{
+    background: url('./img/contact\ us.jpg') center center/cover  no-repeat ;
+    padding: 30px 0;
+    
+}
+#contact .text{
+    margin: 50px 35px;
+
+}
+form input ,
+textarea{
+    display: block;
+    width: 35%;
+    padding: 20px 15px;
+    margin: 20px 25px;
+    border: none;
+    border-radius: 15px;
+    background-color: #fff;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
+#contact .icons{
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    margin: 15px 0;
+}
+#contact i{
+    font-size: 30px;
+    color: #b8756d;
+    padding: 5px;
+}
+#contact .icons .i{
+    background-color: #fff5f2;
+    padding: 15px 15px;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+#footer{
+    background-color:#211c1a;
+    padding: 25px
+}
+.footer_details{
+    text-align: center;
+    margin: 0 auto;
+}
+#footer .Copyright{
+    color: #fff;
+    font-weight: 500;
+
+}
+#footer .Copyright span{
+    font-family: "Dancing Script", cursive;
+    color: #c98a7d;
+}
+
+
