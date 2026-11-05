@@ -48,6 +48,11 @@ h3 ,h4{
 }
 .navbar .logo img{
     width: 100px;
+    border-radius: 18px;
+    -webkit-border-radius: 18px;
+    -moz-border-radius: 18px;
+    -ms-border-radius: 18px;
+    -o-border-radius: 18px;
 }
 .navbar .nav ul{
     display: flex;
@@ -201,15 +206,7 @@ h3 ,h4{
 #shop .list ul li a:hover{
     color: #b8756d;
 }
-#shop img{
-    width: 180px;
-    height: 200px;
-    border-radius: 25px;
-    -webkit-border-radius: 25px;
-    -moz-border-radius: 25px;
-    -ms-border-radius: 25px;
-    -o-border-radius: 25px;
-}
+
 #shop .icon,
 #perfume .detail,
 #accessories .detail{
@@ -232,6 +229,7 @@ h3 ,h4{
     font-size: 18px;
 
 }
+#shop .icon i{margin: 0 10px;}
 #shop .icon i,
 #perfume .item i,
 #accessories .item i
@@ -247,6 +245,21 @@ h3 ,h4{
     align-items: center;
     margin: 25px 0;
 }
+#shop img{
+    width: 180px;
+    height: 200px;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+#shop .perfume .part,
+#shop .access .part{
+    display:flex ;
+    gap: 25px;
+}
+
 #shop #perfume img ,
 #shop #accessories img
 
@@ -259,6 +272,7 @@ h3 ,h4{
     -ms-border-radius: 25px;
     -o-border-radius: 25px;
 }
+
 #shop #perfume .item ,
 #shop #accessories .item 
 {
@@ -301,19 +315,31 @@ h3 ,h4{
     margin: 50px 35px;
 
 }
+
 form input ,
 textarea{
     display: block;
-    width: 35%;
     padding: 20px 15px;
-    margin: 20px 25px;
+    margin: 20px 0;
     border: none;
-    border-radius: 15px;
-    background-color: #fff;
-    -webkit-border-radius: 15px;
-    -moz-border-radius: 15px;
-    -ms-border-radius: 15px;
-    -o-border-radius: 15px;
+    border-radius: 25px;
+    background-color: #fff5f2;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    border: 1px solid #c98a7d;
+    color: #8f5265;
+    width: 50%;
+}
+input::placeholder,textarea::placeholder{
+    color: #b7657d;
+    opacity: 1;
+}
+input:focus,textarea:focus{
+    border: 2px solid #b8756d;
+    outline: none;
+    box-shadow: 0 0 5px #fce8ed;
 }
 
 #contact .icons{
@@ -321,6 +347,10 @@ textarea{
     gap: 25px;
     align-items: center;
     margin: 15px 0;
+}
+#contact .icons .part{
+    display: flex;
+    gap: 15px;
 }
 #contact i{
     font-size: 30px;
@@ -352,6 +382,64 @@ textarea{
 #footer .Copyright span{
     font-family: "Dancing Script", cursive;
     color: #c98a7d;
+}
+@media(max-width:950px){
+.navbar .nav ul li a{ padding: 15px;}
+.left .text{ margin: 25% 0;}
+.left .text h1{padding: 10px 0;font-size: 30px;}
+.left .text h1 span{font-size: 60px;}
+.left .text p{width: 75%;}
+#shop .total_elements{display: block;}
+#shop img{width: 150px;height: 170px;}
+#shop .perfume ,
+#shop .access {display: block;}
+#shop .icon h4,
+#perfume .item h4,
+#accessories .item h4{font-size: 15px;margin: 5px 0;}
+#shop .perfume .part ,
+#shop .access .part{ justify-content: space-around;align-items: center;}
+#shop #perfume img ,
+#shop #accessories img{width: 200px;height: 220px;max-width: 250px;max-height: 270px;}
+#shop .perfume .part,
+#shop .access .part{gap: 5px;}
+#about .content{padding: 10% 35px;}
+#about .content h2{font-size: 35px;}
+#about .content p{width: 75%;}
+#gallary img{width: 200px;max-width: 320; height:220px;max-height: 340;margin:10px ; }
+#gallary{margin: 30px 6%;}
+form input ,
+textarea{width: 75%;}
+#contact .icons{display: block;}
+#contact .icons .i{margin: 10px 0;}
+#home{height: 100vh;height: 100dvh; }
+}
+@media (max-width: 650px){
+.navbar{flex-direction: column;}
+.navbar .nav ul li a{ padding: 0 10px;}
+.left .text h1{padding: 0 0;}
+.left .text{margin-top: 25%;}
+#shop img{width: 80px; max-width: 150px;height: 100px;max-height: 170;}
+#shop #perfume img ,
+#shop #accessories img{width: 110px;height: 130px;max-width: 200px;max-height: 220px;}
+#about .content h2{font-size: 17px;}
+#shop .icon i,
+#perfume .item i,
+#accessories .item i {font-size: 10px}
+.left .text h1 span{font-size: 30px;}
+.left .text h1{font-size: 20px;}
+#gallary img{width: 100px;max-width: 220; height:120px;max-height: 240;margin:10px ; }
+form input ,
+textarea{width: 100%;}
+#shop .list ul{padding: 30px 20px ;}
+#shop .list ul li a{font-size: 12px;}
+#shop .all_products{padding: 15px }
+#perfume h2 ,
+#accessories h2,
+#gallary h2,
+#shop .list h2{font-size: 20px;}
+#contact i{font-size: 20px;}
+#contact .icons h3{font-size: 15px;}
+
 }
 
 
